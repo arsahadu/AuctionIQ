@@ -1,4 +1,4 @@
-# AuctionIQ — A Hybrid Personalized IPL Auction Player Recommendation System
+# 🏏AuctionIQ — A Hybrid Personalized IPL Auction Player Recommendation System
 
 AuctionIQ is an end-to-end Python recommender system that uses historical IPL delivery and match data to answer:
 
@@ -121,62 +121,12 @@ streamlit run app.py
 9. Return Top-K recommendations.
 10. Explain the result from actual score components.
 
-## Hybrid score
-
-The default experimental weights are:
-
-```text
-30% Content
-30% Team Requirement
-15% Recent Form
-10% Consistency
-10% Similarity
- 5% Preference
-```
 
 These weights are intentionally configurable. They should be compared with offline experiments rather than treated as universal truth.
 
-## Collaborative component
 
-`src/collaborative.py` contains a genuine **implicit historical team-player interaction** approach using team-player participation and SVD. It is not based on fabricated ratings.
+### By
 
-This should be described carefully:
-
-> “AuctionIQ includes an optional implicit team-player interaction component; it is not a standard user-rating collaborative filter because the dataset has no user-rating interactions.”
-
-## Evaluation
-
-When genuine relevance labels are available, use:
-
-- Precision@K
-- Recall@K
-- Hit Rate@K
-- NDCG@K
-- Catalog Coverage
-- Recommendation Diversity
-
-With the supplied data, there is no actual auction ground truth. A proxy can use later historical team participation as relevance, but those metrics must be labeled **proxy offline evaluation**, not auction prediction accuracy.
-
-## Academic positioning
-
-The key distinction is:
-
-**Ranking system:** “These are the highest-performing players.”
-
-**AuctionIQ:** “These are the strongest matches for the requirements I specified.”
-
-That difference is the central recommender-system idea in this project.
-
-## Limitations and future work
-
-Future extensions can add verified:
-
-- auction price history
-- base price
-- player nationality
-- official roles
-- current squad state
-- user/team feedback
-- actual auction selection outcomes
-
-Those additions would enable stronger constraint modeling and genuine user-feedback collaborative filtering.
+**Ahad**  
+>> **Thiagarajar College of Engineering, Madurai<br>
+    Developed as an Academic Mini Project<br>**
